@@ -1,9 +1,6 @@
 package repo;
 
 import model.Group;
-import model.User;
-
-import java.util.List;
 
 /**
  * @author Andrej Reutow

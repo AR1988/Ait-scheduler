@@ -14,10 +14,7 @@ import java.util.List;
  * @author Andrej Reutow
  * created on 01.12.2023
  */
-public class InitModules {
-
-    public static final String TEACHER_MAX_MUSTERMANN = "Max Mustermann";
-    public static final String STUDENT_MAX_MUSTERMAMN = "Vasja Pupkin";
+public class InitModels {
 
     public static List<User> init(GroupService groupService, UserService userService) {
         List<User> users = new ArrayList<>();

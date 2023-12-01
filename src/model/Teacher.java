@@ -9,24 +9,7 @@ import java.util.List;
  */
 public class Teacher extends User {
 
-    private final List<Group> teachGroups = new ArrayList<>();
-
     public Teacher(String name) {
         super(name);
-        this.role = Role.TEACHER;
-
-    }
-
-    public List<Group> getTeachGroups() {
-        return teachGroups;
-    }
-
-
-    @Override
-    public String toString() {
-        return "Teacher{" +
-                "teachGroups=" + teachGroups +
-                ", role=" + role +
-                '}';
     }
 }
