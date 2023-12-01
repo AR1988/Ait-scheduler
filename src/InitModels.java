@@ -20,12 +20,10 @@ public class InitModels {
         List<User> users = new ArrayList<>();
 
         int groupCounter = 30;
-        // Генерируем 5 групп
         for (TeacherUserNames tn : TeacherUserNames.values()) {
             Group group = new Group("Группа " + groupCounter++);
             groupService.add(group);
 
-            // Генерируем 10 учеников и добавляем их в группу
             for (StudentUserNames sn : StudentUserNames.values()) {
                 Student student = new Student(sn.getDisplayName());
                 userService.add(student);

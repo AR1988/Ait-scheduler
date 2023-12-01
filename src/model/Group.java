@@ -6,13 +6,20 @@ import java.util.Objects;
 
 public class Group {
 
+    private static int idCounter = 5000;
+    private int id;
     private String name;
 
     private final List<Student> studentList;
 
     public Group(String name) {
+        this.id = ++idCounter;
         this.name = name;
         this.studentList = new ArrayList<>();
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
